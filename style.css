@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(33, 33, 33);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,8 +12,16 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: yellow;
     transform: scaleX(5);
+}
+
+.sun {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(248, 244, 163);
+    box-shadow: 0 0 60px rgb(253, 203, 163), 0 0 98px rgb(184, 160, 26);
+    transform: scaleX(0.2);
 }
 
 .planet {
@@ -23,7 +32,7 @@ body {
 }
 
 #first-planet {
-    background-color: blue;
+    background-color: red;
 }
 
 #second-planet {
@@ -31,17 +40,30 @@ body {
 }
 
 #third-planet {
-    background-color:darkorange;
+    background-color:blue;
 }
 
 .route {
     width: 100%;
     height: 100%;
     animation: rotate 12s infinite linear;
+    position: absolute;
 }
 
 .planet-container {
+    width: 60px;
+    height: 60px;
     animation: correct 12s infinite linear;
+    position: absolute;
+}
+
+#second-planet-container {
+    left: 85px;
+}
+
+#third-planet-container {
+    left: 42.5px;
+    top: 100px;
 }
 
 @keyframes rotate {
