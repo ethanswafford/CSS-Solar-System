@@ -19,4 +19,17 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    transform: scaleX(0.2);
+}
+
+#first-planet {
+    background-color: blue;
+}
+
+#second-planet {
+    background-color: green;
+}
+
+#third-planet {
+    background-color:darkorange;
 }
