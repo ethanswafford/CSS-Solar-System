@@ -40,11 +40,24 @@ body {
     animation: rotate 12s infinite linear;
 }
 
+.planet-container {
+    animation: correct 12s infinite linear;
+}
+
 @keyframes rotate {
     0% {
         transform: rotateZ(0deg);
     }
     100% {
         transform: rotateZ(360deg);
+    }
+}
+
+@keyframes correct {
+    0% {
+        transform: rotateZ(360deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
     }
 }
